@@ -26,4 +26,10 @@ export class DataService {
     return this.http.get<any[]>('/assets/data/albums.json');
 
   }
+
+  getHeroes() {
+    
+    return this.http.get<any[]>('/assets/data/superheroes.json');
+
+  }
 }
