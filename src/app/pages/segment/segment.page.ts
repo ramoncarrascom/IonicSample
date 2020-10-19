@@ -21,9 +21,10 @@ export class SegmentPage implements OnInit {
   segmentChanged(event) {
     console.log(event.detail.value);
 
-    if (event.detail.value === 'todos')
+    if (event.detail.value === 'todos') {
       this.textoFiltro = '';
-    else
+    } else {
       this.textoFiltro = event.detail.value;
+    }
   }
 }
